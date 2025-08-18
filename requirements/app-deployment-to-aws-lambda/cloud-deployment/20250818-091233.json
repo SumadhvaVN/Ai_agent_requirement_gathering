@@ -1,0 +1,32 @@
+{
+  "project_name": "App Deployment to AWS Lambda",
+  "epic": "Cloud Deployment",
+  "stakeholders": [
+    "DevOps Engineer",
+    "Backend Developer",
+    "Project Manager"
+  ],
+  "items": [
+    {
+      "title": "Deploy Application to AWS Lambda",
+      "description": "Package and deploy the existing application to run on AWS Lambda, ensuring compatibility with the serverless environment.",
+      "acceptance_criteria": [
+        "Application code is successfully packaged in a format supported by AWS Lambda (e.g., ZIP or container image).",
+        "Lambda function is created and configured with correct runtime, memory, and timeout settings.",
+        "Application runs without errors when triggered in AWS Lambda.",
+        "Deployment process is documented and repeatable."
+      ],
+      "priority": "High",
+      "dependencies": [
+        "AWS account with Lambda permissions",
+        "Application source code",
+        "AWS CLI or deployment tool configured"
+      ],
+      "non_functional": [
+        "Deployment should complete within 10 minutes.",
+        "Lambda cold start time should be under 1 second for supported runtimes."
+      ]
+    }
+  ],
+  "notes": "Assumed that the application is already developed and only needs deployment to AWS Lambda. No details provided on language, runtime, or triggers; these will need clarification."
+}
