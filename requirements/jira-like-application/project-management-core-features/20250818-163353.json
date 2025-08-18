@@ -1,0 +1,33 @@
+{
+  "project_name": "Jira-like Application",
+  "epic": "Project Management Core Features",
+  "stakeholders": [
+    "Product Owner",
+    "Project Managers",
+    "Development Team",
+    "QA Team",
+    "End Users"
+  ],
+  "items": [
+    {
+      "title": "Issue Tracking System",
+      "description": "Implement a system to create, update, assign, and track issues/tasks within projects.",
+      "acceptance_criteria": [
+        "Users can create issues with title, description, assignee, priority, and status fields",
+        "Users can update issue details and change status",
+        "Issues can be filtered and searched by multiple criteria",
+        "System maintains a history of changes for each issue"
+      ],
+      "priority": "High",
+      "dependencies": [
+        "User Authentication Module",
+        "Database Setup"
+      ],
+      "non_functional": [
+        "System should support at least 100 concurrent users",
+        "Average response time for issue operations should be under 2 seconds"
+      ]
+    }
+  ],
+  "notes": "The requirement is high-level and vague; assumed core functionality similar to Jira's issue tracking. Additional features like boards, sprints, and reporting may be needed in future iterations."
+}
