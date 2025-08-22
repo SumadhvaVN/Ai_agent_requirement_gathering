@@ -1,0 +1,129 @@
+{
+  "epic": {
+    "title": "Core CMS Functionality",
+    "description": "This epic covers the core functionality for managing content in the Content Management System (CMS), including creation, editing, deletion, and authentication.",
+    "labels": [
+      {
+        "name": "cms",
+        "type": "epic"
+      },
+      {
+        "name": "backend",
+        "type": "epic"
+      },
+      {
+        "name": "frontend",
+        "type": "epic"
+      }
+    ],
+    "features": [
+      "Content Creation and Editing"
+    ]
+  },
+  "stories": [
+    {
+      "id": "story-1",
+      "title": "Basic Content Creation and Editing",
+      "description": "Enable authenticated users to create, edit, and delete content pages within the CMS after logging in with Auth0.",
+      "acceptanceCriteria": [
+        "User can log in via Auth0 before accessing content creation features.",
+        "User can create a new content page with title and body text.",
+        "User can edit existing content and save changes.",
+        "User can delete content pages.",
+        "Changes are reflected immediately in the CMS interface."
+      ],
+      "tasks": [
+        {
+          "title": "Integrate Auth0 for CMS authentication",
+          "description": "Implement login flow using Auth0 and restrict content management features to authenticated users.",
+          "labels": [
+            {
+              "name": "auth0",
+              "type": "task"
+            },
+            {
+              "name": "backend",
+              "type": "task"
+            },
+            {
+              "name": "frontend",
+              "type": "task"
+            }
+          ],
+          "feature": "Content Creation and Editing",
+          "epic": "Core CMS Functionality"
+        },
+        {
+          "title": "Implement content creation functionality",
+          "description": "Allow authenticated users to create new content pages with a title and body text.",
+          "labels": [
+            {
+              "name": "frontend",
+              "type": "task"
+            },
+            {
+              "name": "backend",
+              "type": "task"
+            }
+          ],
+          "feature": "Content Creation and Editing",
+          "epic": "Core CMS Functionality"
+        },
+        {
+          "title": "Implement content editing functionality",
+          "description": "Allow authenticated users to edit existing content pages and save changes, with updates shown immediately.",
+          "labels": [
+            {
+              "name": "frontend",
+              "type": "task"
+            },
+            {
+              "name": "backend",
+              "type": "task"
+            }
+          ],
+          "feature": "Content Creation and Editing",
+          "epic": "Core CMS Functionality"
+        },
+        {
+          "title": "Implement content deletion functionality",
+          "description": "Allow authenticated users to delete content pages from the CMS.",
+          "labels": [
+            {
+              "name": "backend",
+              "type": "task"
+            },
+            {
+              "name": "frontend",
+              "type": "task"
+            }
+          ],
+          "feature": "Content Creation and Editing",
+          "epic": "Core CMS Functionality"
+        }
+      ],
+      "priority": "High",
+      "labels": [
+        {
+          "name": "frontend",
+          "type": "story"
+        },
+        {
+          "name": "backend",
+          "type": "story"
+        },
+        {
+          "name": "auth0",
+          "type": "story"
+        },
+        {
+          "name": "content-management",
+          "type": "story"
+        }
+      ],
+      "feature": "Content Creation and Editing",
+      "epic": "Core CMS Functionality"
+    }
+  ],
+  "notes": "Requirement updated to specify Auth0 as the authentication provider. Assumes Auth0 integration will handle user login and session management before allowing content CRUD operations. Non-functional requirements: Page save actions <2 seconds, support at least 50 concurrent editing sessions, Auth0 login completes <3 seconds under normal load."
+}
