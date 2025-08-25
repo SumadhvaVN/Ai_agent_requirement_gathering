@@ -1,0 +1,122 @@
+{
+  "epic": {
+    "title": "Core Image Sharing and Discovery",
+    "description": "Enable users to share and discover images through pins and boards, similar to Pinterest's core functionality.",
+    "labels": [
+      {
+        "name": "image-sharing",
+        "type": "epic"
+      },
+      {
+        "name": "core-functionality",
+        "type": "epic"
+      }
+    ],
+    "features": [
+      "User Image Upload and Pin Creation"
+    ]
+  },
+  "stories": [
+    {
+      "id": "story-1",
+      "title": "Implement User Image Upload and Pin Creation",
+      "description": "Allow users to upload images, add descriptions, and create pins that can be saved to boards.",
+      "acceptanceCriteria": [
+        "Users can upload images in JPEG and PNG formats up to the defined size limit (e.g., 5MB).",
+        "Users can enter a title and description for each pin.",
+        "Uploaded pins appear on the user's profile page.",
+        "Pins are properly categorized under the user's boards.",
+        "Image upload should complete within 3 seconds for images under 5MB in size.",
+        "System supports at least 10,000 concurrent uploads without performance degradation."
+      ],
+      "tasks": [
+        {
+          "title": "Frontend: Build Image Upload UI",
+          "description": "Create a responsive UI component for selecting an image file, adding a title and description, and saving as a pin.",
+          "labels": [
+            {
+              "name": "frontend",
+              "type": "task"
+            },
+            {
+              "name": "UI",
+              "type": "task"
+            }
+          ],
+          "feature": "User Image Upload and Pin Creation",
+          "epic": "Core Image Sharing and Discovery"
+        },
+        {
+          "title": "Backend: Implement Image Upload API",
+          "description": "Develop a backend API endpoint to handle image uploads, metadata, and linking to user profiles/boards.",
+          "labels": [
+            {
+              "name": "backend",
+              "type": "task"
+            },
+            {
+              "name": "api",
+              "type": "task"
+            }
+          ],
+          "feature": "User Image Upload and Pin Creation",
+          "epic": "Core Image Sharing and Discovery"
+        },
+        {
+          "title": "Backend: Integrate Image Storage Service",
+          "description": "Integrate with an image storage service (e.g., AWS S3) for scalable and reliable storage of uploaded files.",
+          "labels": [
+            {
+              "name": "backend",
+              "type": "task"
+            },
+            {
+              "name": "storage",
+              "type": "task"
+            }
+          ],
+          "feature": "User Image Upload and Pin Creation",
+          "epic": "Core Image Sharing and Discovery"
+        },
+        {
+          "title": "QA: Test Image Upload and Pin Creation",
+          "description": "Write and execute test cases to ensure upload functionality works as expected, meets performance goals, and handles concurrent uploads.",
+          "labels": [
+            {
+              "name": "qa",
+              "type": "task"
+            },
+            {
+              "name": "testing",
+              "type": "task"
+            }
+          ],
+          "feature": "User Image Upload and Pin Creation",
+          "epic": "Core Image Sharing and Discovery"
+        }
+      ],
+      "priority": "High",
+      "labels": [
+        {
+          "name": "frontend",
+          "type": "story"
+        },
+        {
+          "name": "backend",
+          "type": "story"
+        },
+        {
+          "name": "api",
+          "type": "story"
+        },
+        {
+          "name": "image-upload",
+          "type": "story"
+        }
+      ],
+      "feature": "User Image Upload and Pin Creation",
+      "epic": "Core Image Sharing and Discovery"
+    }
+  ],
+  "notes": "The requirement is high-level and vague; assumed core functionality is similar to Pinterest's pin creation feature. Dependencies include user authentication and an image storage service. Non-functional requirements include a 3-second upload time for images under 5MB and support for 10,000 concurrent uploads."
+}
