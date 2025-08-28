@@ -1,0 +1,48 @@
+{
+  "project_name": "Team Task Management App",
+  "epic": "Team Collaboration",
+  "stakeholders": [
+    "Product Manager",
+    "Development Team",
+    "UI/UX Designer",
+    "QA Engineer",
+    "End Users"
+  ],
+  "items": [
+    {
+      "title": "Real-time Task Updates",
+      "description": "Enable team members to see task status changes instantly across all devices.",
+      "acceptance_criteria": [
+        "When a user updates a task, all team members see the change within 2 seconds.",
+        "Task updates are reflected without requiring a manual page refresh."
+      ],
+      "priority": "High",
+      "dependencies": [
+        "User authentication module",
+        "Database setup"
+      ],
+      "non_functional": [
+        "System should handle up to 500 concurrent users without performance degradation.",
+        "Updates must be delivered with 99.9% uptime."
+      ]
+    },
+    {
+      "title": "Team Chat Integration",
+      "description": "Provide an in-app chat feature for team members to communicate about tasks.",
+      "acceptance_criteria": [
+        "Users can send and receive messages in real-time within project-specific chat rooms.",
+        "Chat history is stored and retrievable for at least 90 days."
+      ],
+      "priority": "Medium",
+      "dependencies": [
+        "User authentication module",
+        "Real-time communication service"
+      ],
+      "non_functional": [
+        "Messages should be delivered in under 1 second.",
+        "Chat service must be encrypted end-to-end."
+      ]
+    }
+  ],
+  "notes": "User request was broad; assumed core collaboration features include real-time task updates and integrated chat. Additional features like file sharing, notifications, and role-based permissions may be needed."
+}
