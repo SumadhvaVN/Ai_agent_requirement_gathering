@@ -1,0 +1,48 @@
+{
+  "project_name": "Team Task Management Application",
+  "epic": "Team Collaboration",
+  "stakeholders": [
+    "Product Manager",
+    "Development Team",
+    "UI/UX Designer",
+    "QA Engineer",
+    "End Users (Team Members)"
+  ],
+  "items": [
+    {
+      "title": "Collaborative Task Creation and Assignment",
+      "description": "Enable users to create tasks, assign them to team members, and set deadlines within shared projects.",
+      "acceptance_criteria": [
+        "User can create a task with title, description, assignee, and due date",
+        "Assigned team member receives a notification upon task assignment",
+        "Task appears in both creator's and assignee's task lists"
+      ],
+      "priority": "High",
+      "dependencies": [
+        "User authentication and team management module"
+      ],
+      "non_functional": [
+        "System should handle up to 100 concurrent users without performance degradation",
+        "Task creation and assignment actions should complete within 2 seconds"
+      ]
+    },
+    {
+      "title": "Real-time Task Status Updates",
+      "description": "Provide real-time updates to all team members when a task's status changes.",
+      "acceptance_criteria": [
+        "Task status changes are reflected in all connected clients within 2 seconds",
+        "Users receive a notification when a task they are assigned to changes status"
+      ],
+      "priority": "High",
+      "dependencies": [
+        "Collaborative Task Creation and Assignment",
+        "Real-time communication infrastructure"
+      ],
+      "non_functional": [
+        "System should support WebSocket or similar real-time protocol",
+        "Updates should not exceed 1 second latency under normal load"
+      ]
+    }
+  ],
+  "notes": "User request was broad; assumed core collaboration features include task creation, assignment, and real-time updates. Additional features like file sharing, comments, and integrations may be defined later."
+}
