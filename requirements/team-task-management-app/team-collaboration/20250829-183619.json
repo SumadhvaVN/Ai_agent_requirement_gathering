@@ -1,0 +1,48 @@
+{
+  "project_name": "Team Task Management App",
+  "epic": "Team Collaboration",
+  "stakeholders": [
+    "Product Manager",
+    "Development Team",
+    "UI/UX Designer",
+    "QA Engineer",
+    "End Users"
+  ],
+  "items": [
+    {
+      "title": "Real-time Task Updates",
+      "description": "Enable team members to see task status changes instantly across all devices.",
+      "acceptance_criteria": [
+        "When a user updates a task status, all team members see the change within 2 seconds.",
+        "Task updates are reflected without requiring a manual page refresh."
+      ],
+      "priority": "High",
+      "dependencies": [
+        "User authentication module",
+        "Real-time communication service"
+      ],
+      "non_functional": [
+        "System should handle up to 500 concurrent users without performance degradation.",
+        "Updates must be delivered with 99.9% reliability."
+      ]
+    },
+    {
+      "title": "Shared Task Boards",
+      "description": "Provide a shared board where team members can create, assign, and track tasks.",
+      "acceptance_criteria": [
+        "Users can create a new task with title, description, assignee, and due date.",
+        "Tasks can be moved between columns representing different statuses."
+      ],
+      "priority": "High",
+      "dependencies": [
+        "User authentication module",
+        "Database for task storage"
+      ],
+      "non_functional": [
+        "Board should load in under 2 seconds for up to 200 tasks.",
+        "UI should be responsive across desktop and mobile devices."
+      ]
+    }
+  ],
+  "notes": "User input was high-level; assumptions made about real-time updates and shared boards as core collaboration features."
+}
