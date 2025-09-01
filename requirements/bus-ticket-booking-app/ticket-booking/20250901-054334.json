@@ -1,0 +1,35 @@
+{
+  "project_name": "Bus Ticket Booking App",
+  "epic": "Ticket Booking",
+  "stakeholders": [
+    "End Users",
+    "Bus Operators",
+    "Customer Support",
+    "Product Manager",
+    "Development Team"
+  ],
+  "items": [
+    {
+      "title": "Bus Ticket Booking Functionality",
+      "description": "Allow users to search for available buses, select seats, and book tickets through the app with a clear submit button to finalize booking.",
+      "acceptance_criteria": [
+        "User can search buses by origin, destination, and travel date",
+        "Search results display bus operator, departure time, arrival time, and price",
+        "User can select available seats from a seat map",
+        "A clearly labeled 'Submit' button is available on the booking confirmation screen",
+        "Clicking the 'Submit' button finalizes the booking and triggers a booking confirmation with ticket details"
+      ],
+      "priority": "High",
+      "dependencies": [
+        "Bus schedule and seat availability data from operators",
+        "Payment gateway integration"
+      ],
+      "non_functional": [
+        "Search results load within 3 seconds",
+        "System supports at least 1000 concurrent users",
+        "App available on iOS and Android platforms"
+      ]
+    }
+  ],
+  "notes": "Updated requirement to include a clearly labeled submit button for finalizing bookings as per feedback."
+}
