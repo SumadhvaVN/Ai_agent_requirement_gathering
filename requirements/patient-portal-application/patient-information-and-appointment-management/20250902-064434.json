@@ -1,0 +1,58 @@
+{
+  "project_name": "Patient Portal Application",
+  "epic": "Patient Information and Appointment Management",
+  "stakeholders": [
+    "Patients",
+    "Healthcare Providers",
+    "Clinic Administrators",
+    "IT Support Team"
+  ],
+  "items": [
+    {
+      "title": "Patient Demographics Management",
+      "description": "Allow patients to view and update their personal demographic information including name, date of birth, contact details, and address.",
+      "acceptance_criteria": [
+        "Patients can log in securely to access their demographic information.",
+        "Patients can edit and save demographic details with validation for required fields.",
+        "System logs changes to demographic data with timestamps."
+      ],
+      "priority": "High",
+      "dependencies": [],
+      "non_functional": [
+        "Data must be stored securely in compliance with HIPAA.",
+        "System should respond to demographic update requests within 2 seconds."
+      ]
+    },
+    {
+      "title": "Appointment Booking",
+      "description": "Enable patients to search for available appointment slots and book appointments with healthcare providers.",
+      "acceptance_criteria": [
+        "Patients can view available appointment slots by provider and date.",
+        "Patients can book, reschedule, or cancel appointments.",
+        "Confirmation notifications are sent via email or SMS after booking."
+      ],
+      "priority": "High",
+      "dependencies": [],
+      "non_functional": [
+        "Booking operations should complete within 3 seconds.",
+        "System must handle at least 500 concurrent booking requests."
+      ]
+    },
+    {
+      "title": "Common Patient Portal Features",
+      "description": "Provide standard patient portal functionalities such as viewing medical history, accessing lab results, and secure messaging with providers.",
+      "acceptance_criteria": [
+        "Patients can view their past medical history and lab results.",
+        "Patients can send and receive secure messages with healthcare providers.",
+        "All communications are encrypted end-to-end."
+      ],
+      "priority": "Medium",
+      "dependencies": [],
+      "non_functional": [
+        "Portal uptime must be at least 99.9%.",
+        "All data transfers must use TLS 1.2 or higher."
+      ]
+    }
+  ],
+  "notes": "The requirement for 'other common features' is vague; assumed standard portal features like medical history, lab results, and secure messaging. Further clarification needed on additional desired functionalities."
+}
