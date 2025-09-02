@@ -1,0 +1,29 @@
+{
+  "project_name": "Sample App",
+  "epic": "General",
+  "stakeholders": [
+    "Product Owner",
+    "Development Team",
+    "QA Team"
+  ],
+  "items": [
+    {
+      "title": "Initial Project Setup",
+      "description": "Set up the basic structure and configuration for the sample application.",
+      "acceptance_criteria": [
+        "A new code repository is created and accessible to the team",
+        "The project builds successfully in the development environment",
+        "Basic README documentation is available"
+      ],
+      "priority": "Medium",
+      "dependencies": [
+        "None"
+      ],
+      "non_functional": [
+        "Code repository must be hosted on approved version control system",
+        "Project must use agreed-upon coding standards"
+      ]
+    }
+  ],
+  "notes": "User input was vague; assumed requirement is to create a basic starting point for a sample application."
+}
