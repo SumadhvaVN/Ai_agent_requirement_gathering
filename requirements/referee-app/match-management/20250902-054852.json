@@ -1,0 +1,31 @@
+{
+  "project_name": "Referee App",
+  "epic": "Match Management",
+  "stakeholders": [
+    "Referees",
+    "Sports League Administrators",
+    "Coaches",
+    "Players"
+  ],
+  "items": [
+    {
+      "title": "Record Match Events",
+      "description": "Enable referees to log match events such as goals, fouls, and substitutions in real-time.",
+      "acceptance_criteria": [
+        "Referee can select event type from a predefined list",
+        "Event timestamp is automatically recorded",
+        "Event is saved and visible in match timeline"
+      ],
+      "priority": "High",
+      "dependencies": [
+        "User authentication module",
+        "Match schedule database"
+      ],
+      "non_functional": [
+        "Mobile-friendly interface",
+        "Low latency for event logging"
+      ]
+    }
+  ],
+  "notes": "User input was vague; assumed core functionality involves referees managing and recording match events. Additional requirements such as reporting, offline mode, and integration with league systems may be needed."
+}
