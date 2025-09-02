@@ -1,0 +1,28 @@
+{
+  "project_name": "New Application",
+  "epic": "General",
+  "stakeholders": [
+    "Product Owner",
+    "Development Team",
+    "End Users"
+  ],
+  "items": [
+    {
+      "title": "Define Core Features",
+      "description": "Identify and document the main functionalities the new app should provide.",
+      "acceptance_criteria": [
+        "A documented list of at least 5 core features is created",
+        "Each feature includes a brief description and intended user benefit"
+      ],
+      "priority": "High",
+      "dependencies": [
+        "Stakeholder interviews",
+        "Market research"
+      ],
+      "non_functional": [
+        "Clarity of documentation"
+      ]
+    }
+  ],
+  "notes": "The requirement is vague; no specific domain, platform, or target audience provided. Assumed initial step is to define core features."
+}
