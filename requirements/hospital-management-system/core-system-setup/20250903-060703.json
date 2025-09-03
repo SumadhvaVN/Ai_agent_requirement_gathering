@@ -1,0 +1,31 @@
+{
+  "project_name": "Hospital Management System",
+  "epic": "Core System Setup",
+  "stakeholders": [
+    "Hospital Administrator",
+    "Doctors",
+    "Nurses",
+    "IT Department",
+    "Patients"
+  ],
+  "items": [
+    {
+      "title": "System Architecture Definition",
+      "description": "Design and document the overall architecture for the hospital management system, including modules for patient records, appointments, billing, and staff management.",
+      "acceptance_criteria": [
+        "Architecture document includes all core modules and their interactions",
+        "Technology stack is defined and approved by IT Department",
+        "Security and compliance requirements are addressed in the design"
+      ],
+      "priority": "High",
+      "dependencies": [
+        "Stakeholder requirements gathering"
+      ],
+      "non_functional": [
+        "System must comply with healthcare data protection regulations (e.g., HIPAA)",
+        "Architecture must support scalability for at least 500 concurrent users"
+      ]
+    }
+  ],
+  "notes": "User request was high-level and vague; assumed initial step is to define system architecture before detailed module requirements."
+}
