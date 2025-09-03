@@ -1,0 +1,34 @@
+{
+  "project_name": "Project Management Tool",
+  "epic": "Analytics Dashboard",
+  "stakeholders": [
+    "Product Manager",
+    "Project Managers",
+    "Data Analyst",
+    "Development Team"
+  ],
+  "items": [
+    {
+      "title": "Implement Analytics Dashboard",
+      "description": "Develop an analytics dashboard to display key project metrics and performance indicators in real-time.",
+      "acceptance_criteria": [
+        "Dashboard displays at least 5 key metrics (e.g., project progress, task completion rate, resource utilization, budget usage, deadline adherence).",
+        "Data on the dashboard updates automatically at least every 5 minutes.",
+        "Users can filter metrics by project, team, and date range.",
+        "Dashboard is accessible from the main navigation menu.",
+        "Charts and graphs are interactive and allow drill-down into detailed data."
+      ],
+      "priority": "High",
+      "dependencies": [
+        "Project data collection and storage system",
+        "User authentication and authorization module"
+      ],
+      "non_functional": [
+        "Dashboard loads within 3 seconds for standard datasets",
+        "Responsive design for desktop and tablet",
+        "Data accuracy within 1% of source records"
+      ]
+    }
+  ],
+  "notes": "User input did not specify exact metrics or data sources; assumptions made about common project KPIs and update frequency."
+}
